@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #f0faff;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px ;
+  background: #0E0D0D;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: block;
+    
+}
+.nav,
+.nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav li{
+  font-family: 'Alegreya Sans SC', sans-serif;
+
+}
+.nav {
+  justify-content: space-between;
+  font-family: 'Alegreya Sans SC', sans-serif;
+
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav .logo img {
+ 
+  left: 0;
+  width: 20vw;
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+}
+.nav .nav-links {
+  column-gap: 20px;
+  list-style: none;
+}
+.nav .nav-links a {
+  transition: all 0.2s linear;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Alegreya Sans SC', sans-serif;
+
+}
+
+.nav-item a:hover {
+    color: #E91616;
+}
+.nav-item  a.active {
+    color: #E91616;
+}
+.aa{
+  color: #E91616;
+}
+
+.nav .navOpenBtn,
+.nav .navCloseBtn {
+  display: none;
+}
+
+
+
+
+.bg-image {
+  background-image: url('assests/home_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  z-index: -1;
+}
+
+.bg-heading
+{
+  font-family: 'Rubik Glitch', monospace;
+  font-size: clamp(42px, 15px, 10px);
+  color: white;
+  text-align: center;
+  font-weight: 180;
+  padding: 130px clamp(1rem, 2vw, 3rem);
+  /* border-radius: clamp(0.4rem, 0.75vw, 1rem); */
+  letter-spacing: 0.15rem;
+  margin-top: -35px;
+  font-size: 30px;
+
+}
+.bg-image h1,p{
+  margin: 0;
+}
+.bg-image p{
+ 
+  color: white;
+  text-align: center;
+  margin-top: -130px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 20px;
+
+  
+}
+
+.bg-image p span{
+  color: #FF0000;
+  font-weight: bold;
+}
+/* 
+h1 {
+  font-family: 'Rubcik Glitch', sans-serif;
+  color: #E91616;
+  text-align: center;
+  padding: 15px;
+  font-size: 33px;
+  font-weight:lighter;
+ }
+ h1 {
+  letter-spacing: 0.35rem;
+ } */
+
+
+/*footer*/
+
+.footer {
+  padding: 50px;
+  background-image: url('assests/footer.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  color: #fff;
+  font-size: 15px;
+  /* padding: 35px; */
+}
+
+.footer a{
+  color: white;
+}
+
+
+
+
+/* <!--contact Section--!> */
+
+
+.contactimage{
+  background-image: url('assests/contactus.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+  margin-top:30px;
+}
+
+.contacthead{
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: clamp(42px, 15px, 10px);
+  color: rgb(247, 0, 0);
+  text-align: center;
+  font-weight: 250;
+  padding: 130px;
+  /* border-radius: clamp(0.4rem, 0.75vw, 1rem); */
+  letter-spacing: 0.15rem;
+  
+  font-size: 50px;
+}
+.s1{
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 38px;
+  color: white;
+  margin-top: -150px;
+
+}
+.contacthead span{
+   font-family: 'Rubik Glitch', monospace;
+   font-weight: 200;
+   color: rgb(255, 0, 0);
+}
+
+.form-wrapper {
+  position: relative;
+  z-index: 9999;
+}
+
+.form {
+  border: none;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;  
+}
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width: 1160px) {
+  .nav {
+    padding: 15px 100px;
+  }
+ 
+
+
+}
+@media screen and (max-width: 950px) {
+  .nav {
+    padding: 15px 50px;
+  }
+  
+
+
+}
+@media screen and (max-width: 768px) {
+  .bg-image p{
+    font-size: 15px;
+  }
+  .nav .navOpenBtn,
+  .nav .navCloseBtn {
+    display: block;
+  }
+  .nav {
+    padding: 15px 20px;
+  }
+  .nav .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 50%;
+    max-width: 280px;
+    width: 100%;
+    padding-top: 100px;
+    row-gap: 30px;
+    flex-direction: column;
+    background-color: #11101d;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    z-index: 100;
+  }
+  .nav.openNav .nav-links {
+    left: 0;
+  }
+  .nav .navOpenBtn {
+    color: #E91616;
+    font-size: 20px;
+    cursor: pointer;
+    
+  }
+  .nav .navCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .bg-heading
+{
+    font-size: clamp(20px, 10px, 10px);
+}
+
+/*footer*/
+
+.footer{
+  font-size: 13px;
+  z-index: -1;
+}
+
+/* .footer .footer-row {
+  flex-direction: column;
+}
+.footer-row {
+  justify-content: center;
+}
+
+.footer-col {
+  width: 100%;
+}
+
+.footer-col.icons {
+  margin-top: 0;
+  text-align: left; 
+}
+
+.footer-col.icons p {
+  margin-bottom: 0; 
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.icon-text a {
+  margin-right: 10px;
+} */
+
+
+/*contact section*/
+
+.contacthead{
+  padding: 50px;
+  font-size: 30px;
+  color:rgb(255, 0, 0);
+  margin-top: 0px;
+}
+.contacthead span{
+  margin-top: 50px;
+  color: rgb(255, 0, 0);
+  font-size: 35px;
+}
+
+.cardform{
+flex-direction: column;
+}
+
+}
+
